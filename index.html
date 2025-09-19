@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Single Page Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Bites - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header & Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Fresh Bites</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample responsive single-page website with HTML only.</p>
+    <main>
+        <section class="hero">
+            <h1>Your Favorite Meals, Delivered Fresh</h1>
+            <p>Delicious food from local chefs, brought straight to your door. Simple, fast, and fresh.</p>
+            <a href="#menu" class="cta-button">See Our Menu</a>
+        </section>
 
-    <div>
-      <img src="images/slide1.jpg" alt="Slider image" width="300">
-      <p>[Image slider placeholder]</p>
-    </div>
-  </section>
+        <section id="menu" class="content-section">
+            <h2>Popular Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <h3>Chicken Alfredo</h3>
+                    <p>Creamy alfredo sauce with grilled chicken and fettuccine pasta.</p>
+                </div>
+                <div class="dish-card">
+                    <h3>Spicy Tuna Roll</h3>
+                    <p>Fresh tuna with a touch of spice, wrapped in sushi rice and nori.</p>
+                </div>
+                <div class="dish-card">
+                    <h3>Vegan Burrito Bowl</h3>
+                    <p>A healthy mix of black beans, rice, corn, and avocado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- About Section -->
-  <section id="about">
-    <h1>About Us</h1>
-    <p>This project demonstrates how to use HTML5 for structure. Styling and interactivity are normally added with CSS and JavaScript.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h1>Contact Us</h1>
-    <form>
-      <label>Name:</label>
-      <input type="text" name="name" required>
-      <br><br>
-      <label>Email:</label>
-      <input type="email" name="email" required>
-      <br><br>
-      <label>Message:</label>
-      <textarea name="message" required></textarea>
-      <br><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Fresh Bites. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
