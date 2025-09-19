@@ -1,33 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Basic form validation for the contact page
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Prevent the default form submission
+    // Form validation and submission for the contact page
+    const reservationForm = document.getElementById('reservation-form');
+    if (reservationForm) {
+        reservationForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevents the page from reloading
 
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
+            const date = document.getElementById('date').value;
+            const guests = document.getElementById('guests').value;
             const message = document.getElementById('message').value;
-            const statusMessage = document.getElementById('form-status');
+            const formMessage = document.getElementById('form-message');
 
-            if (name === '' || email === '' || message === '') {
-                statusMessage.textContent = 'Please fill out all fields.';
-                statusMessage.style.color = 'red';
+            if (name === '' || email === '' || date === '' || guests === '') {
+                formMessage.textContent = 'Please fill out all required fields.';
+                formMessage.style.color = 'red';
             } else {
-                statusMessage.textContent = 'Message sent successfully! We will get back to you soon.';
-                statusMessage.style.color = 'green';
-                contactForm.reset(); // Clear the form
+                formMessage.textContent = `Thank you, ${name}! Your reservation for ${guests} guests on ${date} has been submitted. We will contact you at ${email} to confirm.`;
+                formMessage.style.color = 'green';
+                reservationForm.reset(); // Clear the form fields
             }
         });
     }
-
-    // Optional: Add an "active" class to the current page link
-    const currentPath = window.location.pathname.split('/').pop();
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath || (currentPath === '' && link.getAttribute('href') === 'index.html')) {
-            link.classList.add('active');
-        }
-    });
 });
