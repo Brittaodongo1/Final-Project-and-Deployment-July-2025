@@ -1,90 +1,33 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Mnyazi Swahili Dishes
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+This is a modern, responsive website for **Mnyazi Swahili Dishes**, an authentic Swahili cuisine restaurant. The site is designed to be clean, elegant, and easy to navigate, with a color palette inspired by Swahili textiles and a focus on showcasing the unique flavors of the food.
 
 ---
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## Features
 
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+- **Responsive Design:** The website is fully responsive and looks great on desktop, tablet, and mobile devices.
+- **Dynamic Menu:** The menu page features interactive tabs to filter dishes by category (Appetizers, Main Courses, Desserts, Drinks).
+- **Elegant & Themed UI:** A custom color palette and typography are used to create a warm and inviting atmosphere that reflects the restaurant's brand.
+- **Contact & Reservations:** A contact form is included for customer inquiries and reservation requests.
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## Technologies Used
 
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+- **HTML5:** For the website's structure and content.
+- **CSS3:** For all styling, including layout, colors, and typography. The design is based on a modern, mobile-first approach.
+- **JavaScript:** A simple script is used to handle the mobile navigation toggle and the menu filtering functionality.
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## Setup & Usage
 
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+To view this website, simply open the `index.html` file in your preferred web browser. All of the necessary files (CSS, JS) are linked relative to the HTML files.
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## Credits
 
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+- **Design & Code:** Developed by the Mnyazi Swahili Dishes team.
+- **Photography:** All photos are sourced from free stock photo sites and are used for illustrative purposes. We suggest sites like Unsplash, StockSnap.io, or Burst by Shopify for high-quality, royalty-free images.
