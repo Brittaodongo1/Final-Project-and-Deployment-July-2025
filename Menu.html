@@ -3,59 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet House - Menu</title>
+    <title>Our Menu - Mnyazi Swahili Dishes</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Gourmet House</a>
-            <ul>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Mnyazi Swahili Dishes</a>
+            <button class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact & Reservations</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="content-section">
-            <h2>Our Culinary Creations</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="images/salmon.jpg" alt="Pan-Seared Salmon">
+        <section class="menu-hero-section">
+            <div class="menu-hero-content container">
+                <h1>Our Authentic Menu</h1>
+                <p>A culinary journey through the heart of the Swahili coast.</p>
+            </div>
+        </section>
+
+        <section class="menu-section container">
+            <div class="menu-tabs">
+                <button class="menu-tab-btn active" data-category="all">All</button>
+                <button class="menu-tab-btn" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab-btn" data-category="mains">Main Courses</button>
+                <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+                <button class="menu-tab-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-list">
+                <article class="menu-item" data-category="appetizers">
+                    <img src="images\lyubina-yoncheva-Sgs4Ic3dI4o-unsplash.jpg" alt="Fried potato bites with tamarind sauce.">
                     <div class="item-details">
-                        <h3>Pan-Seared Salmon</h3>
-                        <p>With roasted asparagus and a lemon-dill sauce.</p>
-                        <span class="price">$32</span>
+                        <h3>Viazi Karai</h3>
+                        <p class="description">Crispy fried potatoes coated in a spiced flour batter, served with a zesty tamarind sauce.</p>
+                        <span class="price">$7</span>
                     </div>
-                </div>
-                <div class="menu-item">
-                    <img src="images/steak.jpg" alt="Filet Mignon">
+                </article>
+                <article class="menu-item" data-category="appetizers">
+                    <img src="images\faisal-UkDrAwxzdok-unsplash.jpg" alt="A plate of beef and vegetable samosas.">
                     <div class="item-details">
-                        <h3>Prime Filet Mignon</h3>
-                        <p>Served with truffle mashed potatoes and red wine reduction.</p>
-                        <span class="price">$45</span>
+                        <h3>Meat & Veg Samosas</h3>
+                        <p class="description">Flaky pastries filled with your choice of savory spiced beef or mixed vegetables.</p>
+                        <span class="price">$9</span>
                     </div>
-                </div>
-                <div class="menu-item">
-                    <img src="images/pasta.jpg" alt="Truffle Pasta">
+                </article>
+
+                <article class="menu-item" data-category="mains">
+                    <img src="images\rita-daisy-PZydEr3wKZc-unsplash.jpg" alt="A plate of chicken pilau.">
                     <div class="item-details">
-                        <h3>Wild Mushroom Risotto</h3>
-                        <p>Creamy Arborio rice with porcini mushrooms and Parmesan cheese.</p>
-                        <span class="price">$28</span>
+                        <h3>Mishkaki Pilau</h3>
+                        <p class="description">Fragrant rice dish cooked in a rich broth with marinated grilled beef skewers.</p>
+                        <span class="price">$20</span>
                     </div>
-                </div>
+                </article>
+                <article class="menu-item" data-category="mains">
+                    <img src="images\smboro-ANUYfc2aPXU-unsplash.jpg" alt="Coconut rice with fish.">
+                    <div class="item-details">
+                        <h3>Wali wa Nazi na Samaki</h3>
+                        <p class="description">Steamed coconut rice served with a light and flavorful fish curry.</p>
+                        <span class="price">$22</span>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="mains">
+                    <img src="images\hery-agus-jkmwp_OYOA8-unsplash.jpg" alt="Ugali with sukuma wiki greens.">
+                    <div class="item-details">
+                        <h3>Ugali with Sukuma Wiki</h3>
+                        <p class="description">A traditional cornmeal porridge paired with well-seasoned collard greens.</p>
+                        <span class="price">$15</span>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="desserts">
+                    <img src="images/jonathan-borba-MIDk-oHcdNU-unsplash (1).jpg" alt="A plate of fresh mahamri.">
+                    <div class="item-details">
+                        <h3>Mahamri</h3>
+                        <p class="description">Soft, sweet Swahili doughnuts flavored with cardamom and coconut milk, perfect for dipping.</p>
+                        <span class="price">$6</span>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="desserts">
+                    <img src="images\keesha-s-kitchen-vI_rW7JP-0E-unsplash.jpg" alt="A fresh tomato and onion salad.">
+                    <div class="item-details">
+                        <h3>Kachumbari</h3>
+                        <p class="description">A refreshing salad of diced tomatoes, onions, chili peppers, and cilantro with a lime dressing.</p>
+                        <span class="price">$5</span>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="drinks">
+                    <img src="images\gilbert-beltran-V56Actstd5M-unsplash.jpg" alt="A glass of tamarind juice.">
+                    <div class="item-details">
+                        <h3>Tamarind Juice</h3>
+                        <p class="description">A sweet and tangy juice made from fresh tamarind fruit, a coastal favorite.</p>
+                        <span class="price">$4</span>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="drinks">
+                    <img src="images\peace-creative-z2pPb5ByOQc-unsplash.jpg" alt="A cup of spiced chai latte.">
+                    <div class="item-details">
+                        <h3>Spiced Chai Latte</h3>
+                        <p class="description">Traditional East African spiced tea brewed with milk and a hint of honey.</p>
+                        <span class="price">$5</span>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gourmet House. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="footer-info">
+                <h3>Mnyazi Swahili Dishes</h3>
+                <p>45 Coastal Road, Spice City, USA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@mnyazi.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Mnyazi Swahili Dishes. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-                              </html>
+</html>

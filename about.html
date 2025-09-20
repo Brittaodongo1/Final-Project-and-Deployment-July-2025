@@ -3,50 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet House - About Us</title>
+    <title>Our Story - Mnyazi Swahili Dishes</title>
     <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Gourmet House</a>
-            <ul>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Mnyazi Swahili Dishes</a>
+            <button class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html" class="active">Our Story</a></li>
+                <li><a href="contact.html">Contact & Reservations</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="content-section">
-            <h2>Our Philosophy</h2>
-            <p class="intro-paragraph">Gourmet House is more than a restaurant; it's a destination for the discerning palate. Our philosophy is simple: combine exceptional ingredients with masterful technique to create a truly elevated dining experience.</p>
+        <section class="about-hero-section">
+            <div class="about-hero-content container">
+                <h1>Our Story</h1>
+                <p>From the heart of the Swahili coast to your plate, with passion and heritage.</p>
+            </div>
+        </section>
 
-            <div class="philosophy-grid">
-                <div class="philosophy-item">
-                    <img src="images/chef-icon.png" alt="Chef's hat icon">
-                    <h3>Masterful Chefs</h3>
-                    <p>Our kitchen is led by world-class chefs who bring years of experience and a passion for culinary innovation to every plate.</p>
-                </div>
-                <div class="philosophy-item">
-                    <img src="images/ingredients-icon.png" alt="Ingredients icon">
-                    <h3>Finest Ingredients</h3>
-                    <p>We source our ingredients from trusted local farms and suppliers, ensuring every dish is made with the freshest and highest quality components.</p>
-                </div>
-                <div class="philosophy-item">
-                    <img src="images/service-icon.png" alt="Waitstaff icon">
-                    <h3>Impeccable Service</h3>
-                    <p>Our staff is dedicated to providing warm, attentive service that anticipates your every need, making you feel right at home.</p>
-                </div>
+        <section class="our-story-section container">
+            <div class="story-image">
+                <img src="images\isawred-KnF_BBU-rm4-unsplash.jpg" alt="A smiling chef preparing a Swahili dish.">
+            </div>
+            <div class="story-text">
+                <h2>A Taste of Home</h2>
+                <p>Mnyazi Swahili Dishes was founded by Chef Mnyazi, who grew up on the Kenyan coast learning the art of Swahili cooking from her grandmother. Inspired by the bustling spice markets and the fresh catch of the day, she dreamed of sharing her family's cherished recipes with the world.</p>
+                <p>Our commitment is simple: to honor tradition and flavor. We source our spices directly from East Africa and work with local markets to find the freshest ingredients, ensuring every meal we serve is a true taste of coastal home cooking.</p>
+            </div>
+        </section>
+
+        <section class="team-section container">
+            <h2>Our Family</h2>
+            <div class="team-members">
+                <article class="team-member">
+                    <img src="images\prince-akachi-J1OScm_uHUQ-unsplash.jpg" alt="Portrait of Mnyazi, founder and head chef.">
+                    <h3>Britta Mnyazi</h3>
+                    <p class="role">Founder & Head Chef</p>
+                    <p>Amina is the heart of our kitchen, blending traditional recipes with her own creative flair to create a menu full of authentic delights.</p>
+                </article>
+                <article class="team-member">
+                    <img src="images\christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Portrait of the restaurant general manager.">
+                    <h3>Said Hassan</h3>
+                    <p class="role">General Manager</p>
+                    <p>Said ensures every guest feels the warmth of our hospitality, managing our team and daily operations with care and a friendly smile.</p>
+                </article>
+                <article class="team-member">
+                    <img src="images\brecht-denil-AxAwBT9kAV8-unsplash.jpg" alt="A local spice vendor.">
+                    <h3>Our Vendor Partners</h3>
+                    <p class="role">The Soul of Our Spices</p>
+                    <p>Our relationships with local markets and spice traders are essential. They provide us with the authentic ingredients that make our dishes so special.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gourmet House. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="footer-info">
+                <h3>Mnyazi Swahili Dishes</h3>
+                <p>45 Coastal Road, Spice City, USA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@mnyazi.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Mnyazi Swahili Dishes. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

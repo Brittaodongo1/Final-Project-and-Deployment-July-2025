@@ -3,46 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet House - Fine Dining</title>
+    <title>Mnyazi Swahili Dishes - Authentic Swahili Flavors</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Gourmet House</a>
-            <ul>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Mnyazi Swahili Dishes</a>
+            <button class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact & Reservations</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Experience Culinary Excellence</h1>
-            <p>A symphony of flavors, a blend of tradition and innovation. Welcome to Gourmet House.</p>
-            <a href="menu.html" class="cta-button">View Our Menu</a>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Authentic Swahili Flavors</h1>
+                <p>Experience the rich heritage of coastal cuisine.</p>
+                <a href="menu.html" class="btn">Explore Our Menu</a>
+            </div>
         </section>
 
-        <section class="content-section">
-            <h2>Our Story</h2>
-            <div class="story-grid">
-                <div class="story-text">
-                    <p>At Gourmet House, we believe that dining is an art form. Our journey began with a passion for creating unforgettable gastronomic experiences. Each dish is a masterpiece, crafted with the freshest, locally-sourced ingredients and a touch of our chef's signature flair.</p>
-                    <p>We invite you to savor the unique tastes and elegant ambiance that define our restaurant. Our dedicated staff is here to ensure your visit is nothing short of perfect.</p>
-                </div>
-                <div class="story-image">
-                    <img src="images/restaurant-interior.jpg" alt="Elegant restaurant interior">
-                </div>
+        <section class="about-intro-section container">
+            <div class="intro-text">
+                <h2>Our Heritage</h2>
+                <p>At Mnyazi Swahili Dishes, we celebrate the vibrant flavors and traditions of East African coastal cooking. Our recipes have been passed down through generations, using a blend of fragrant spices, fresh seafood, and local produce to create a truly authentic culinary experience.</p>
+                <a href="about.html" class="btn btn-secondary">Read Our Story</a>
+            </div>
+            <div class="intro-image">
+                <img src="images\freepik__the-style-is-candid-image-photography-with-natural__28192.png" alt="A collection of colorful Swahili spices.">
+            </div>
+        </section>
+
+        <section class="featured-menu-section container">
+            <h2>From Our Kitchen</h2>
+            <div class="menu-highlights">
+                <article class="highlight-item">
+                    <img src="images\eugene-krasnaok-K7qy_rLX6_I-unsplash.jpg" alt="A plate of chicken pilau.">
+                    <h3>Chicken Pilau</h3>
+                    <p>A fragrant rice dish cooked with chicken, potatoes, and a blend of aromatic spices.</p>
+                </article>
+                <article class="highlight-item">
+                    <img src="images\freepik__the-style-is-candid-image-photography-with-natural__28194.png" alt="Beef mishkaki skewers.">
+                    <h3>Beef Mishkaki</h3>
+                    <p>Marinated beef skewers grilled to perfection and served with a zesty sauce.</p>
+                </article>
+                <article class="highlight-item">
+                    <img src="images\clay-p7CUs0McO6I-unsplash.jpg" alt="A plate of fresh mahamri.">
+                    <h3>Mahamri & Coconut Bean Soup</h3>
+                    <p>Sweet, fluffy Swahili doughnuts served with a hearty coconut and bean soup.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Gourmet House. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="footer-info">
+                <h3>Mnyazi Swahili Dishes</h3>
+                <p>45 Coastal Road, Spice City, USA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@mnyazi.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Mnyazi Swahili Dishes. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
